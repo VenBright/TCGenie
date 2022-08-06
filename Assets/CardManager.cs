@@ -6,37 +6,41 @@ using UnityEngine;
 public class CardManager : MonoBehaviour
 {
 	public TextAsset cardSheet;
-    public List<List<Card>> allCards;
+	public List<List<Card>> allCards;
 	public TextMeshPro cardName, cardDesc;
-	public Animator cardAnim;
 
+	Animator cardAnim;
 	string[] cardList;
 
 	private void Start()
 	{
+		cardAnim = GetComponent<Animator>();
 		GatherCards();
+		PickCard();
 	}
 
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.P))
 		{
-			PickCard();
-			cardAnim.Play("FlipForward", 0, 0);
+			cardAnim.Play("FullFlip", 0, 0);
 		}
 	}
 
-	void GatherCards() {
+	void GatherCards()
+	{
 		cardList = cardSheet.text.Split('\n');
 		allCards = new List<List<Card>>();
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 5; i++)
+		{
 			allCards.Add(new List<Card>());
 		}
 
 
 		string[] parsedCard;
 		int parsedRarity = 1;
-		for (int i = 1; i < cardList.Length; i++) {
+		for (int i = 1; i < cardList.Length; i++)
+		{
 			parsedCard = cardList[i].Split(',');
 			if (!int.TryParse(parsedCard[0], out parsedRarity))
 			{
@@ -48,12 +52,34 @@ public class CardManager : MonoBehaviour
 		}
 	}
 
-	public void PickCard() {
+	//Currently called by the "FullFlip" animation
+	public void PickCard()
+	{
 		int rarity = Random.Range(0, 5);
 		int card = Random.Range(0, allCards[rarity].Count);
 
 		Card pickedCard = allCards[rarity][card];
 		cardName.text = pickedCard.name;
 		cardDesc.text = pickedCard.description;
+	}
+}
+
+[SerializeField]
+public class Card
+{
+	public int rarity;
+	public string id, name, description;
+
+	public Card(int rarityIn, string idIn, string nameIn, string descIn)
+	{
+		rarity = rarityIn;
+		id = idIn;
+		name = nameIn;
+		description = descIn;
+	}
+
+	public override string ToString()
+	{
+		return "Rarity: " + rarity + ", Name: " + name;
 	}
 }
