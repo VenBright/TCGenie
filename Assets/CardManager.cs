@@ -11,12 +11,13 @@ public class CardManager : MonoBehaviour
 
 	Animator cardAnim;
 	string[] cardList;
+	PlayerCollection playerDeck;
 
 	private void Start()
 	{
 		cardAnim = GetComponent<Animator>();
+		playerDeck = GameObject.FindObjectOfType<PlayerCollection>();
 		GatherCards();
-		PickCard();
 	}
 
 	private void Update()
@@ -52,19 +53,24 @@ public class CardManager : MonoBehaviour
 		}
 	}
 
-	//Currently called by the "FullFlip" animation
 	public void PickCard()
 	{
 		int rarity = Random.Range(0, 5);
-		int card = Random.Range(0, allCards[rarity].Count);
+		int cardIndex = Random.Range(0, allCards[rarity].Count);
 
-		Card pickedCard = allCards[rarity][card];
+		Card pickedCard = allCards[rarity][cardIndex];
 		cardName.text = pickedCard.name;
 		cardDesc.text = pickedCard.description;
+
+
+		if (playerDeck.AddCard(pickedCard)) {
+			Debug.Log("NEW CARD: " + pickedCard.id);
+			cardAnim.Play("PopIn");
+		}
 	}
 }
 
-[SerializeField]
+[System.Serializable]
 public class Card
 {
 	public int rarity;

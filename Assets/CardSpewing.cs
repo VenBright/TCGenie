@@ -23,7 +23,7 @@ public class CardSpewing : MonoBehaviour
         debugPartCount = system.particleCount;
 
         //Try to more accurately reflect lower amounts
-        if (queuedAmount < system.emission.rateOverTime.constant * system.main.startLifetime.constant)
+        if (queuedAmount < system.emission.rateOverTime.constant)
             cardsSpewed += newParticles;
         else
             cardsSpewed += system.emission.rateOverTime.constant * Time.deltaTime;

@@ -6,11 +6,15 @@ public class CardPack : MonoBehaviour
 {
     public int packAmt = 8;
 
+    CardManager cardManager;
     CardSpewing spew;
+    Animator anim;
 
     private void Start()
     {
+        cardManager = GameObject.FindObjectOfType<CardManager>();
         spew = GameObject.FindObjectOfType<CardSpewing>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -30,6 +34,10 @@ public class CardPack : MonoBehaviour
 
     public void OpenPack()
     {
+        for (int i = 0; i < packAmt; i++) {
+            cardManager.PickCard();
+        }
         spew.QueueCardParticles(packAmt);
+        anim.Play("PackBounce", 0, 0);
     }
 }
