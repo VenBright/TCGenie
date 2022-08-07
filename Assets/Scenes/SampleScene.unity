@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &225272363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225272365}
+  - component: {fileID: 225272364}
+  m_Layer: 0
+  m_Name: CardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &225272364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225272363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510288a3cf508854c81ed7ec2e9de81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardSheet: {fileID: 4900000, guid: b96bd89f1301a55489e1a55c06a22880, type: 3}
+  cardDisplay: {fileID: 1511761337}
+--- !u!4 &225272365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225272363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8320012, y: -0.92585, z: -15.048335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &248961240
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8814748470983588655, guid: 912ec517100d6444abcdeb4d0912c027, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8814748470983588655, guid: 912ec517100d6444abcdeb4d0912c027, type: 3}
       propertyPath: m_LocalScale.x
@@ -902,7 +947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &621066742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -993,7 +1038,7 @@ Transform:
   m_Children:
   - {fileID: 1198997635}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &621066746
 Animator:
@@ -1146,7 +1191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &844845041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1211,7 +1256,7 @@ Transform:
   m_Children:
   - {fileID: 266319539}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &844845043
 BoxCollider:
@@ -1558,8 +1603,9 @@ GameObject:
   - component: {fileID: 1511761336}
   - component: {fileID: 1511761337}
   - component: {fileID: 1511761335}
+  - component: {fileID: 1511761338}
   m_Layer: 0
-  m_Name: FullCard
+  m_Name: BigCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1598,7 +1644,7 @@ Transform:
   - {fileID: 964552432}
   - {fileID: 750791698}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1511761337
 MonoBehaviour:
@@ -1609,10 +1655,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511761334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 510288a3cf508854c81ed7ec2e9de81b, type: 3}
+  m_Script: {fileID: 11500000, guid: a359b21c00f13cf4bbad2e743c16e401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardSheet: {fileID: 4900000, guid: b96bd89f1301a55489e1a55c06a22880, type: 3}
   cardName: {fileID: 479203881}
   cardDesc: {fileID: 248961242}
   cardRarity: {fileID: 1614759919}
@@ -1622,6 +1667,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 626c25958ebce83438bd32590d47e3b5, type: 3}
   - {fileID: 21300000, guid: ecc0c2eea1d3c2241a537cfa4d22d791, type: 3}
   - {fileID: 21300000, guid: 064033ed5d435284a85075dcbdc77ae5, type: 3}
+  queuedCards: []
+  currentState: 0
+--- !u!65 &1511761338
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511761334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1614759917
 GameObject:
   m_ObjectHideFlags: 0

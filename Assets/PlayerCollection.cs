@@ -34,7 +34,7 @@ public class PlayerCollection : MonoBehaviour
 			cardCollection.Add(newCard);
 			collectedIds.Add(newCard.id);
 
-			return false;
+			return true;
 		}
 		else {
 			int cardIndex = collectedIds.IndexOf(cardIn.id);

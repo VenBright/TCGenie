@@ -1,33 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class CardManager : MonoBehaviour
 {
 	public TextAsset cardSheet;
 	public List<List<Card>> allCards;
-	public TextMeshPro cardName, cardDesc;
-	public SpriteRenderer cardRarity;
-	public Sprite[] raritySprites = new Sprite[5];
+	public BigCard cardDisplay;
 
-	Animator cardAnim;
 	string[] cardList;
 	PlayerCollection playerDeck;
 
 	private void Start()
 	{
-		cardAnim = GetComponent<Animator>();
 		playerDeck = GameObject.FindObjectOfType<PlayerCollection>();
 		GatherCards();
-	}
-
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.P))
-		{
-			cardAnim.Play("FullFlip", 0, 0);
-		}
 	}
 
 	void GatherCards()
@@ -57,17 +44,23 @@ public class CardManager : MonoBehaviour
 
 	public void PickCard()
 	{
-		int rarity = Random.Range(0, 5);
+		int rarity = Random.Range(3, 4);//(0, 5);
 		int cardIndex = Random.Range(0, allCards[rarity].Count);
 
+		int superRareOdds = 1;
+		int rareGrab = Random.Range(0, 100);
+		if (rareGrab < superRareOdds)
+		{
+			rarity = 4;
+			cardIndex = 0;
+			Debug.Log("Lucky draw");
+		}
+
 		Card pickedCard = allCards[rarity][cardIndex];
-		cardName.text = pickedCard.name;
-		cardDesc.text = pickedCard.description;
-		cardRarity.sprite = raritySprites[rarity];
+
 
 		if (playerDeck.AddCard(pickedCard)) {
-			Debug.Log("NEW CARD: " + pickedCard.id);
-			cardAnim.Play("PopIn");
+			cardDisplay.QueueCard(pickedCard);
 		}
 	}
 }
