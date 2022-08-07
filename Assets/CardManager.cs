@@ -8,6 +8,8 @@ public class CardManager : MonoBehaviour
 	public TextAsset cardSheet;
 	public List<List<Card>> allCards;
 	public TextMeshPro cardName, cardDesc;
+	public SpriteRenderer cardRarity;
+	public Sprite[] raritySprites = new Sprite[5];
 
 	Animator cardAnim;
 	string[] cardList;
@@ -61,7 +63,7 @@ public class CardManager : MonoBehaviour
 		Card pickedCard = allCards[rarity][cardIndex];
 		cardName.text = pickedCard.name;
 		cardDesc.text = pickedCard.description;
-
+		cardRarity.sprite = raritySprites[rarity];
 
 		if (playerDeck.AddCard(pickedCard)) {
 			Debug.Log("NEW CARD: " + pickedCard.id);
