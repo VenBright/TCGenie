@@ -34,10 +34,10 @@ public class CardPack : MonoBehaviour
 
     public void OpenPack()
     {
+        spew.QueueCardParticles(packAmt);
         for (int i = 0; i < packAmt; i++) {
             cardManager.PickCard();
         }
-        spew.QueueCardParticles(packAmt);
         anim.Play("PackBounce", 0, 0);
     }
 }

@@ -11,7 +11,7 @@ public class PlayerCollection : MonoBehaviour
 	{
 		public int count = 0;
 
-		public CollectedCard(Card cardIn) : base (cardIn.rarity, cardIn.id, cardIn.name, cardIn.description)
+		public CollectedCard(Card cardIn) : base (cardIn.rarity, cardIn.id, cardIn.name, cardIn.prereq, cardIn.description)
 		{
 			count = 1;
 		}
@@ -41,5 +41,9 @@ public class PlayerCollection : MonoBehaviour
 			cardCollection[cardIndex].count += 1;
 		}
 		return false;
+	}
+
+	public bool HasCard(string cardId) {
+		return collectedIds.Contains(cardId);
 	}
 }

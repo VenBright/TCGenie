@@ -1,0 +1,7 @@
+RARITY|ID|NAME|PREREQUISITE|DESCRIPTION
+1|rightarm|Right Arm of the Forbidden One||Collect all 5 pieces to obtain Never-Ending Power!
+2|nothere|He's not here...|where|Hmmm... where has he gone?
+3|neither|"He's not here, either..."|nothere|"Okay, but like, where is he?"
+4|itshim|It's Him!|neither|There he is! You Found Him!
+5|hasgrown|He has grown!|itshim|He has grown more powerful! Incredible!
+2|ygojoke|The Centennial Cod Piece||This contains sacred treasures that let you cheat in card games

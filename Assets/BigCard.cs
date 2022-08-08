@@ -94,7 +94,6 @@ public class BigCard : MonoBehaviour
         }
         else
         {
-            Debug.Log("FNF: " + path);
             cardPic.material.SetTexture("_MainTex", defaultCardPic);
         }
     }

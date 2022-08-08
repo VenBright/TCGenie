@@ -152,8 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510288a3cf508854c81ed7ec2e9de81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardSheet: {fileID: 4900000, guid: b96bd89f1301a55489e1a55c06a22880, type: 3}
+  cardSheet: {fileID: 4900000, guid: f0ce915b0701f934e859aa870a2fdb75, type: 3}
   cardDisplay: {fileID: 1511761337}
+  debugRarity: 1
 --- !u!4 &225272365
 Transform:
   m_ObjectHideFlags: 0
@@ -1201,7 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dece52421f3e2b4ebc19801acbb3cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  packAmt: 5
+  packAmt: 1
 --- !u!95 &844845045
 Animator:
   serializedVersion: 3
