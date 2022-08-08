@@ -45,7 +45,15 @@ public class CardManager : MonoBehaviour
 				parsedRarity = 1;
 			}
 
-			Card newCard = new Card(parsedRarity, parsedCard[1], parsedCard[2], parsedCard[3]);
+			//Lol gotta handle commas
+			string parsedDescription = parsedCard[3];
+			if (parsedCard.Length > 4) {
+				for (int j = 4; j < parsedCard.Length; j++) {
+					parsedDescription += "," + parsedCard[j];
+				}
+			}
+
+			Card newCard = new Card(parsedRarity, parsedCard[1], parsedCard[2], parsedDescription);
 			allCards[parsedRarity - 1].Add(newCard);
 		}
 	}
