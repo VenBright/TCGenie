@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.IO;
 
 public class BigCard : MonoBehaviour
 {
     public TextMeshPro cardName, cardDesc;
+    public MeshRenderer cardPic;
+    public Texture2D defaultCardPic;
     public SpriteRenderer cardRarity;
     public Sprite[] raritySprites = new Sprite[5];
     Animator cardAnim;
@@ -81,5 +84,18 @@ public class BigCard : MonoBehaviour
         cardName.text = card.name;
         cardDesc.text = card.description;
         cardRarity.sprite = raritySprites[card.rarity - 1];
+
+        string path = "CardPics/" + card.id;
+
+        if (Resources.Load<Texture2D>(path) != null)
+        {
+            Texture2D loadedImage = Resources.Load<Texture2D>(path);
+            cardPic.material.SetTexture("_MainTex", loadedImage);
+        }
+        else
+        {
+            Debug.Log("FNF: " + path);
+            cardPic.material.SetTexture("_MainTex", defaultCardPic);
+        }
     }
 }

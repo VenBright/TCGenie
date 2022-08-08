@@ -17,6 +17,14 @@ public class CardManager : MonoBehaviour
 		GatherCards();
 	}
 
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.P)) {
+			Debug.Log("Pasta baby");
+			cardDisplay.DisplayCard(allCards[0][1]);
+		}
+	}
+
 	void GatherCards()
 	{
 		cardList = cardSheet.text.Split('\n');
@@ -44,7 +52,8 @@ public class CardManager : MonoBehaviour
 
 	public void PickCard()
 	{
-		int rarity = Random.Range(3, 4);//(0, 5);
+		int rarity = Random.Range(0, 5);
+//		int rarity = Random.Range(3, 4);
 		int cardIndex = Random.Range(0, allCards[rarity].Count);
 
 		int superRareOdds = 1;
