@@ -43,7 +43,36 @@ public class PlayerCollection : MonoBehaviour
 		return false;
 	}
 
-	public bool HasCard(string cardId) {
-		return collectedIds.Contains(cardId);
+	public bool CheckPrereq(string prereq) {
+		
+		string[] allReqs = prereq.Split('/');
+
+		string[] req;
+		string type, id;
+		for (int i = 0; i < allReqs.Length; i++) {
+			req = allReqs[i].Split(':');
+			type = req[0];
+			id = req[1];
+
+			switch (type) {
+				case "CARD":
+					if (!collectedIds.Contains(id))
+						return false;
+					break;
+				case "PACK":
+					//Return false if the current pack is too low
+					//(Would compare the string to an enum to check)
+					break;
+				case "ITEM":
+					Debug.Log("Item required: " + id);
+					//Return false if the player doesnt have an item with this id
+					break;
+				default:
+					//idk I guess it doesn't matter
+					break;
+			}
+		}
+
+		return true;
 	}
 }

@@ -154,7 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardSheet: {fileID: 4900000, guid: f0ce915b0701f934e859aa870a2fdb75, type: 3}
   cardDisplay: {fileID: 1511761337}
-  debugRarity: 1
 --- !u!4 &225272365
 Transform:
   m_ObjectHideFlags: 0
@@ -1509,7 +1508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119984232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1183489749}

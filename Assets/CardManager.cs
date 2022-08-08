@@ -69,7 +69,7 @@ public class CardManager : MonoBehaviour
 		Card pickedCard = allCards[rarity][cardIndex];
 
 		//For now just skips a card if the prerequisite hasnt been obtained
-		if (!pickedCard.prereq.Equals("") && !playerDeck.HasCard(pickedCard.prereq))
+		if (!pickedCard.prereq.Equals("") && !playerDeck.CheckPrereq(pickedCard.prereq))
 		{
 			Debug.Log("Prereq not found: " + pickedCard.prereq);
 			PickCard();
