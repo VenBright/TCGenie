@@ -8,6 +8,10 @@ public class CardManager : MonoBehaviour
 	public List<List<Card>> allCards;
 	public BigCard cardDisplay;
 
+	public int maxOdds = 100000;
+	//Chance out of 10,000 for a card of x rarity to be picked
+	public int[] rarityOdds = new int[5];
+
 	string[] cardList;
 	PlayerCollection playerDeck;
 
@@ -53,20 +57,18 @@ public class CardManager : MonoBehaviour
 
 	public void PickCard()
 	{
-		int rarity = Random.Range(0, 5);
-		//		int rarity = Random.Range(3, 4);
-		int cardIndex = Random.Range(0, allCards[rarity].Count);
-
-		int superRareOdds = 1;
-		int rareGrab = Random.Range(0, 1000);
-		if (rareGrab < superRareOdds)
+		int rareGrab = Random.Range(0, maxOdds);
+		int tier, cardIndex = Random.Range(0, allCards[0].Count); ;
+		for (tier = 4; tier > 0; tier--)
 		{
-			rarity = 4;
-			cardIndex = 0;
-			Debug.Log("Lucky draw");
+			if (rareGrab <= rarityOdds[tier])
+			{
+				cardIndex = Random.Range(0, allCards[tier].Count);
+				break;
+			}
 		}
 
-		Card pickedCard = allCards[rarity][cardIndex];
+		Card pickedCard = allCards[tier][cardIndex];
 
 		//For now just skips a card if the prerequisite hasnt been obtained
 		if (!pickedCard.prereq.Equals("") && !playerDeck.CheckPrereq(pickedCard.prereq))
