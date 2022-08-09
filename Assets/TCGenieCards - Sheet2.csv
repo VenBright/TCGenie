@@ -1,0 +1,53 @@
+RARITY|ID|NAME|PREREQUISITE|DESCRIPTION
+1|kornslug|Korn Slug||Live Korn Slug Reaction
+1|pastacat|Spaghetti Cat||A feline who really likes long pasta
+1|cardboard|Cardboard Card||We put cardboard on your cardboard. You're welcome.
+1|leftarm|Left Arm of the Forbidden One||Collect all 5 pieces to obtain Ultimate Power!
+1|rightarm|Right Arm of the Forbidden One||Collect all 5 pieces to obtain Never-Ending Power!
+1|basicland|The Basic Land||The Land of the Basic, home to the Basic Bitch
+1|token|The Token||This will be useful! When? I don't know. But it will!
+1|geniepecs|The Genie of the Pecs||Take a look at my bulging pecs! Look at them :)
+1|noescape|There is No Escape||You will never leave. You will play my game for eternity.
+1|blank|_____||Whoops, I forgot to put something here. My b -TCGenie
+1|genieface|The Genie of the Pack||Congrats! You got the mascot card! This'll be worth something in 20 years.
+1|usdgenie|Upside-Down Genie||Look! It's the cool genie, but upside down! Wacky!
+4|creditcard|Mom's Credit Card||Great! Now, all you need is the 3 numbers on the back!
+3|yellowcard|Yellow Card||Aaaand that's a foul on the play!
+3|yellowband|YellowCard||Hey, you know that song? Meet me on Ocean Avenue? Get it???
+4|redflagfutbol|Red Flag (Sports)||Oh no! Well, I guess you're out of the game, now! (hahaha no you're still trapped)
+3|redflagrela|Red Flag (Derogatory)||Oh, yikes! Gonna get blocked for that one, hoss.
+1|where|Where did he go?||Has anyone seen him? I can't find him anywhere!
+2|nothere|He's not here...|CARD:where|Hmmm... where has he gone?
+3|neither|He's not here, either...|CARD:nothere|Okay, but like, where is he?
+4|itshim|It's Him!|CARD:neither|There he is! You Found Him!
+5|hasgrown|He has grown!|CARD:itshim|He has grown more powerful! Incredible!
+1|Pggro|Passive-Aggression||Allows you to be smug and unbearable for 1 turn.
+3|Apassive|Aggressive-Passive||Allows you to impress and astound your friends with your assholery.
+3|rightleg|Right Leg of the Forbidden One||Collect all 5 pieces for Eternal Power!
+3|leftleg|Left Leg of the Forbidden One||Collect all 5 pieces to Immediately Win the Game!
+5|nohead|So... No Head?||What do you mean there's no Head!?
+2|ygojoke|The Centennial Cod Piece||This contains sacred treasures that let you cheat in card games
+2|bootleg|Main Square||Main Square, Main Bitch House
+2|keptblank|This Space is Intentionally Blank||I'll figure out a good joke here later, -TCGenie
+2|had2doit|We had to.||We had to do it to 'em.
+2|rickroll|Never Gonna Give You Up||I saw this for the first time the other day, it's so funny!
+3|hugcoupone|Free Hug Coupon (Expired)||Good for one free hug from the TCGenie! (Expiration date: yesterday)
+5|hugcouponv|Free Hug Coupon (Valid)||Good for one free hug from the TCGenie! (Expiration date: never)
+3|johncena|Are you sure this is what you want?||ARE YOU SURE ABOUT THAT
+4|biscard|The Genie's Business Card||Now you can call me anytime! :)
+3|Plusone|Plus One!||Gives +1! +1 to what? What do you mean?
+2|minus1|Minus One!||Gives -1 to your opponent! have fun with it!
+4|plusfive|Plus Five!||Gives +5 to whatever you want! All of it!
+3|threecards|A 3-for-1 Bargin!||This card is worth 3 cards at once! Draw 1, draw 3!
+1|holyroad|The Holy Road||Where we always wanted to go...
+1|toobig|Too Big!||Hey, Frank! This thing doesn't even fit! Can you fix it???
+1|toosmall|Too Small!||Fraaaaank! How this supposed to even look good? Come on, man!
+3|adlib|The ___ Card Ever!||Fill this in yourself! Making things is fun :)
+5|diy|Fine, Then!||If you think my cards are so silly, then do it yourself!
+5|ice|PureBlueIce||Writer and designer! Check her out @PureBlueIce
+5|ven|VenBright||Designer and project lead! Check him out @Ven_Bright
+5|jakobe|Jakobe||Programmer and Scripter! Check him out @
+5|hinus|Hinus||Artist! Designed the Genie's face! Check him out @
+5|sans|?????||??????????????????
+4|parks|Ron Swanson's Permit||With it, you can do whatever you want.
+2|comma|A Single Comma||"AW CRAP WAIT THIS IS GONNA RUIN EVERY-
