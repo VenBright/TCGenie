@@ -41,7 +41,7 @@ RARITY|ID|NAME|PREREQUISITE|DESCRIPTION
 3|threecards|A 3-for-1 Bargin!||This card is worth 3 cards at once! Draw 1, draw 3!
 1|holyroad|The Holy Road||Where we always wanted to go...
 1|toobig|Too Big!||Hey, Frank! This thing doesn't even fit! Can you fix it???
-1|toosmall|Too Small!||Fraaaaank! How this supposed to even look good? Come on, man!
+1|toosmall|Too Small!|CARD:toobig|Fraaaaank! How this supposed to even look good? Come on, man!
 5|diy|Fine, Then!||If you think my cards are so silly, then do it yourself!
 5|ice|PureBlueIce||Writer and designer! Check her out @PureBlueIce
 5|ven|VenBright||Designer and project lead! Check him out @Ven_Bright
