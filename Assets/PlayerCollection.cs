@@ -33,7 +33,11 @@ public class PlayerCollection : MonoBehaviour
 	//Returns true if the added card was not yet in the deck
 	public bool AddCard(Card cardIn) {
 		totalCards++;
-		currencyText.text = string.Format("{0:#,###0}", totalCards); ;
+		currencyText.text = string.Format("{0:#,###0}", totalCards);
+
+		if (cardIn.id == "getout")
+			Debug.LogError("YOU DID IT. YOU WON. IDIOT");
+
 		if (!collectedIds.Contains(cardIn.id))
 		{
 			CollectedCard newCard = new CollectedCard(cardIn);

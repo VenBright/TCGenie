@@ -65,6 +65,8 @@ public class CardManager : MonoBehaviour
 		{
 			if (rareGrab <= rarityOdds[tier])
 			{
+				if (tier == 4)
+					Debug.Log("UBER RARE ACQUIRED");
 				cardIndex = Random.Range(0, allCards[tier].Count);
 				break;
 			}
@@ -80,7 +82,7 @@ public class CardManager : MonoBehaviour
 			return;
 		}
 
-		if (playerDeck.AddCard(pickedCard) && !debugDisableBigCard)
+		if (playerDeck.AddCard(pickedCard) && !debugDisableBigCard && (pickedCard.prereq.Contains("CARD") || pickedCard.id.Equals("where")))
 		{
 			cardDisplay.QueueCard(pickedCard);
 		}

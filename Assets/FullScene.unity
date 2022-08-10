@@ -1208,7 +1208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &93109991
 Animator:
   serializedVersion: 4
@@ -3747,7 +3747,7 @@ GameObject:
   - component: {fileID: 597515398}
   - component: {fileID: 597515397}
   m_Layer: 0
-  m_Name: 20 Cards
+  m_Name: 5 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3806,7 +3806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20 Cards
+  m_Text: 5 Cards
 --- !u!222 &597515398
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4667,7 +4667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &705181702
 Animator:
   serializedVersion: 4
@@ -6152,7 +6152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &992098093
 Animator:
   serializedVersion: 4
@@ -6285,7 +6285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1002461383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6984,11 +6984,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510288a3cf508854c81ed7ec2e9de81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardSheet: {fileID: 4900000, guid: b65c881543f203347a80c68404baba0b, type: 3}
+  cardSheet: {fileID: 4900000, guid: c5a06f867f36fce4995c6effd29dff55, type: 3}
   cardDisplay: {fileID: 1002461385}
   maxOdds: 100000
-  rarityOdds: 0000000000000000000000000000000001000000
-  debugDisableBigCard: 1
+  rarityOdds: a0860100d43000001a060000c300000001000000
+  debugDisableBigCard: 0
 --- !u!4 &1089098577
 Transform:
   m_ObjectHideFlags: 0
@@ -7364,7 +7364,7 @@ GameObject:
   - component: {fileID: 1249409447}
   - component: {fileID: 1249409446}
   m_Layer: 0
-  m_Name: 5_000 Cards
+  m_Name: 1_800 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7423,7 +7423,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5,000 Cards
+  m_Text: 1,800 Cards
 --- !u!222 &1249409447
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8671,7 +8671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1513568179
 Animator:
   serializedVersion: 4
@@ -9483,7 +9483,7 @@ GameObject:
   - component: {fileID: 1590256831}
   - component: {fileID: 1590256830}
   m_Layer: 0
-  m_Name: 500 Cards
+  m_Name: 80 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9542,7 +9542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 500 Cards
+  m_Text: 80 Cards
 --- !u!222 &1590256831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9639,7 +9639,7 @@ GameObject:
   - component: {fileID: 1597063844}
   - component: {fileID: 1597063843}
   m_Layer: 0
-  m_Name: 2_000 Cards
+  m_Name: 300 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9698,7 +9698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2,000 Cards
+  m_Text: 300 Cards
 --- !u!222 &1597063844
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11478,7 +11478,7 @@ GameObject:
   - component: {fileID: 1916428386}
   - component: {fileID: 1916428385}
   m_Layer: 0
-  m_Name: 20_000 Cards
+  m_Name: 5_000 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11537,7 +11537,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20,000 Cards
+  m_Text: 5,000 Cards
 --- !u!222 &1916428386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11869,7 +11869,7 @@ GameObject:
   - component: {fileID: 1995193528}
   - component: {fileID: 1995193527}
   m_Layer: 0
-  m_Name: 100 Cards
+  m_Name: 20 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11928,7 +11928,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100 Cards
+  m_Text: 20 Cards
 --- !u!222 &1995193528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12568,7 +12568,7 @@ GameObject:
   - component: {fileID: 2136006565}
   - component: {fileID: 2136006564}
   m_Layer: 0
-  m_Name: 5 Cards
+  m_Name: 900 Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12627,7 +12627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5 Cards
+  m_Text: 900 Cards
 --- !u!222 &2136006565
 CanvasRenderer:
   m_ObjectHideFlags: 0
