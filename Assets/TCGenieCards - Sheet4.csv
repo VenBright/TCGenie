@@ -1,0 +1,111 @@
+RARITY|ID|NAME|PREREQUISITE|DESCRIPTION
+1|kornslug|Korn Slug||Live Korn Slug Reaction
+5|pastacat|Spaghetti Cat||A feline who really likes long pasta
+1|cardboard|Cardboard Card||We put cardboard on your cardboard. You're welcome.
+1|leftarm|Left Arm of the Forbidden One||Collect all 5 pieces to obtain Ultimate Power!
+1|rightarm|Right Arm of the Forbidden One||Collect all 5 pieces to obtain Never-Ending Power!
+1|basicland|The Basic Land||The Land of the Basic, home to the Basic Bitch
+1|token|The Token||This will be useful! When? I don't know. But it will!
+1|geniepecs|The Genie of the Pecs||Take a look at my bulging pecs! Look at them :)
+1|noescape|There is No Escape||You will never leave. You will play my game for eternity.
+1|blank|_____||Whoops, I forgot to put something here. My b -TCGenie
+1|genieface|The Genie of the Pack||Congrats! You got the mascot card! This'll be worth something in 20 years.
+1|usdgenie|Upside-Down Genie||Look! It's the cool genie, but upside down! Wacky!
+4|creditcard|Mom's Credit Card||Great! Now, all you need is the 3 numbers on the back!
+3|yellowcard|Yellow Card||Aaaand that's a foul on the play!
+3|yellowband|YellowCard||Hey, you know that song? Meet me on Ocean Avenue? Get it???
+4|redflagfutbol|Red Flag (Sports)||Oh no! Well, I guess you're out of the game, now! (hahaha no you're still trapped)
+3|redflagrela|Red Flag (Derogatory)||Oh, yikes! Gonna get blocked for that one, hoss.
+1|where|Where did he go?||Has anyone seen him? I can't find him anywhere!
+2|nothere|He's not here...|CARD:where|Hmmm... where has he gone?
+3|itshim|It's Him!|CARD:nothere|There he is! You Found Him!
+4|hasgrown|He has grown!|CARD:itshim|He has grown more powerful! Incredible!
+5|ohgodrun|OH GOD RUN|CARD:hasgrown|HE HAS GROWN TOO POWERFUL 
+1|Pggro|Passive-Aggression||Allows you to be smug and unbearable for 1 turn.
+3|Apassive|Aggressive-Passive||Allows you to impress and astound your friends with your assholery.
+3|rightleg|Right Leg of the Forbidden One||Collect all 5 pieces for Eternal Power!
+3|leftleg|Left Leg of the Forbidden One||Collect all 5 pieces to Immediately Win the Game!
+5|nohead|So... No Head?||What do you mean there's no Head!?
+2|ygojoke|The Centennial Cod Piece||This contains sacred treasures that let you cheat in card games
+2|bootleg|Main Square||Main Square, Main Bitch House
+2|keptblank|This Space is Intentionally Blank||I'll figure out a good joke here later, -TCGenie
+2|had2doit|We had to.||We had to do it to 'em.
+2|rickroll|Never Gonna Give You Up||I saw this for the first time the other day, it's so funny!
+3|hugcoupone|Free Hug Coupon (Expired)||Good for one free hug from the TCGenie! (Expiration date: yesterday)
+5|hugcouponv|Free Hug Coupon (Valid)||Good for one free hug from the TCGenie! (Expiration date: never)
+3|johncena|Are you sure this is what you want?||ARE YOU SURE ABOUT THAT
+4|biscard|The Genie's Business Card||Now you can call me anytime! :)
+3|Plusone|Plus One!||Gives +1! +1 to what? What do you mean?
+2|minusone|Minus One!||Gives -1 to your opponent! have fun with it!
+4|plusfive|Plus Five!||Gives +5 to whatever you want! All of it!
+3|threecards|A 3-for-1 Bargin!||This card is worth 3 cards at once! Draw 1, draw 3!
+1|holyroad|The Holy Road||Where we always wanted to go...
+1|toobig|Too Big!||Hey, Frank! This thing doesn't even fit! Can you fix it???
+1|toosmall|Too Small!|CARD:toobig|Fraaaaank! How this supposed to even look good? Come on, man!
+5|diy|Fine, Then!||If you think my cards are so silly, then do it yourself!
+5|ice|PureIceBlue||Writer and designer! Check her out @IceWoodrick
+5|ven|VenBright||Designer and project lead! Check him out @Ven_Bright
+5|jakobe|Jakobe||Programmer and Scripter! Check him out @JVidalGD
+5|hinus|Hinus||Artist! Designed the Genie's face! Check him out @
+5|sans|?????||??????????????????
+4|parks|Ron Swanson's Permit||With it, you can do whatever you want.
+2|fetchland|Fetchland||This card allows you to draw "The Retrievelands"
+3|fetchland2|The Retrievelands||Oh! You brought it back! Good dog!!!
+5|heartofthecards|The Heart of the Cards||You're not really supposed to see this. Secret.
+5|barkmagician|The Bark Magician||The Ultimate Wizard in terms of Offense and Defense
+5|nincodeno|Nincodeno||Programmer and Discord Bot Maker! Check him out @
+2|comma|A Single Comma||AW CRAP WAIT THIS IS GONNA RUIN EVERY-
+5|getout|Get Out of Genie Free Card||NOOOO YOU HAVE DEFEATED ME NOoOooOOooOooOo
+1|fool|The Fool||Dipshit what gotta go on a journey. Maybe not become a dipshit idk
+1|magician|The Magician||Will you become something special or just stay a dipshit
+1|hpriestess|The High Priestess||What will you learn? Or will you learn nothing? Or learn about 'nothing'?
+1|empress|The Empress||Time is limited. You must hurry, or your dreams will be left undone
+1|emperor|The Emperor||You may meet a mentor, a friend, a foe. Or all 3. At once.
+2|hierophant|The Hierophant||People may come to your aid, or leave you hanging. Will you depend on them?
+2|lovers|The Lovers||Intimacy may lead to greater vulnerabilities. Is it worth the risk?
+2|chariot|The Chariot||Will you squash those in your path, lost little dipshit? Trample them?
+2|justice|Justice||Will society side with your actions, tiny dipshit? Or must you run in the shadows towards your goal?
+2|hermit|The Hermit||Do you sense betrayal? Has intimacy failed you? Or do the patterns exist only in your eyes? 
+2|wof|The Wheel Of Fortune||Does your journey begin and end in wealth? Posessions? Because, if so, lmao
+3|strength|Strength||Does your journey start and stop with power? Influence? Because, if true? Come on now.
+3|hangedman|The Hanged Man||You probably won't literally be hung, but like, learning to not be a dipshit ain't the easiest thing.
+3|death|~*DEATH*~||Okay so realtalk, everyone who sees this thinks OH NO SKULL but actually it's just about a major change to the status quo not literal death. More of a point of no return situation, honestly wait where are you going come back
+3|temperance|Temperance||Please, do not overspend, just, in general. Retail therapy is nice credit card bills are not 
+4|devil|The Devil||Now, this one on the other hand, is largely kinda what'd you expect from a card with a christian devil on it. 
+4|tower|The Tower||When a tower comes crumbling down, avoid the debris, and the shockwave it causes in the air
+4|star|The Star||A guiding light, yet impossibly far. Inspirational, yet tragic, don't you agree?
+4|moon|The Moon||Complacency is your biggest enemy. Do not allow the moon's glow to distract you from the surrounding darkness. 
+4|sun|The Sun||You're there. You're getting there. It surrounds you, but is it what you desired from the start? Want, or need?
+5|judgment|Judgment||You will be judged on your current dipshit-status. I hope you've grown. I'm proud of you, either way.
+5|world|The World||No, we're not making that obvious joke. Go away
+5|detail|This is my favorite detail||The fact he comes out of the card pack, god I think that's so clever -V
+4|joker|The Joker||What a dick, right? Causing pranks. Convincing weebs Japan invented Jazz.
+5|rulescard|Rules Card||No, we're not making *that* joke either. Stop it.
+4|ace|The Ace||The Ace. What is it the Ace of? I don't know, I'm not a cop
+3|nrokslug|nrok slug||a past recording of a nrok slug
+4|rngenie|The RNGenie||He's sad because he's a cut character in this game
+1|petrock|Pet Rock||Possibly the lamest novelty item ever sold. At least Sea Monkeys were actually alive.
+3|deadrock|Dead Rock|CARD:petrock|The end result of a child smashing their pet rock with a hammer. Not even a cool crystal inside or anything.
+2|callout|Callout Post||Apparently your excessive arsenal of infinite card packs is bad for the environment. Stupid hippies.
+2|nights|TCGenie Nights||A cool new spinoff of TCGenie where you open cards by day and solve mysteries by night! Season two will also have you fight the paranormal!
+1|princess|Pastry Princess||The warm and sweet princess of Dessertia who was kidnapped by the evil King Chomper! Will you save her before she's eaten?
+3|crumbs|Crumb Princess|CARD:princess|Okay, Chomper had a pretty good point. She turned out delicious.
+1|lint|Pocket Lint||If you leave this card in your pocket, then wash your clothes, it'll turn into REAL pocket lint!
+1|kidney|Kidney||You can exchange your kidney for this card at local retailers, but you can't do the reverse.
+1|elevator|Broken Elevator||If you fart during this predicament, everyone else in the elevator is legally allowed to jump you.
+1|lavalamp|Lava Lamp||You can't eat the lava, I tried.
+2|kahuna|The Big Kahuna Burger||The greatest burger of all time.
+2|holly|Holly||This dog keeps making me bring her outside while I'm writing just so she can drink the rainwater. I can't ignore her because she's old and has bladder problems. It is 1:00 AM.
+1|pasta|Bowl of Farfalle||It's actually meant to resemble butterflies, not bow-ties, you uncultured swine.
+1|swampwater|Swamp Water||Step One: Pour chocolate syrup in a tall glass. Step Two: Slowly pour cola in the glass. Step Three: Stir slowly. Step Four: Top the glass off with more cola after the foam goes down. Step Five: Enjoy!
+1|grass|Grass||You're not gonna be touching it as long as you're here.
+1|crystal|JO Crystal||A special crystal that allows bros to bond in the most spiritually powerful way possible.
+2|essay|Video Essay||After seven hours, you're gonna know so much more about the straight to video Barbie movies.
+2|midi|Final Boss Theme||[Error: Midi files cannot be played on trading cards.]
+2|gummybears|Sugar-Free Gummy Bears||Come on, have a few. It'll be fine. I promise.
+2|egg|The Century Egg||Are you brave enough to try it? Or are you a little baby bitchface?
+2|renman|That Middle Aged Man at the Ren Faire||Like, he's having fun and is acting in character, but does he really have to kiss the hand of every single twenty something gal that gets too close to his alert radius?
+1|chewed|Slightly Chewed Card||Yeah, I don't care that your little sister likes chewing things. This isn't tournament legal, bub.
+2|ninja|Mall Ninja||Still can't stop me from thinking the rainbow-sheened metal is cool.
+2|morb|Morbius Sweep||He sure is sweeping.
+1|shirt|Terrible Graphic Tee||The shirt sucks, but it was a gift from your well-meaning mom. I guess it can make a good sleep shirt.

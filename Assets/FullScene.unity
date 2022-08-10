@@ -1047,6 +1047,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 811846120}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &155310273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1503,6 @@ RectTransform:
   - {fileID: 793570809}
   - {fileID: 1968849615}
   - {fileID: 801745489}
-  - {fileID: 811846122}
   m_Father: {fileID: 2086450266}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1530,7 +1541,7 @@ MonoBehaviour:
   - {fileID: 793570814}
   - {fileID: 1968849620}
   playerWallet: {fileID: 1786563829}
-  upgradeCosts: 00000000050000000a000000140000002800000050000000a0000000
+  upgradeCosts: 0000000032000000c800000020030000b80b00002823000050460000
 --- !u!1 &342328495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,7 +1607,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &375406399
 GameObject:
@@ -2857,7 +2868,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   cardsPerRow: 5
-  debugEnableBlackout: 1
+  debugEnableBlackout: 0
 --- !u!1 &589692184
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,8 +4673,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811846120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -905.8073, y: -510.2094, z: 0.5319808}
-  m_LocalScale: {x: 1.783406, y: 1.783406, z: 1.783406}
+  m_LocalPosition: {x: 0.14343262, y: 0.16293335, z: 0.29829484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 70147752}
@@ -4673,8 +4684,8 @@ Transform:
   - {fileID: 705181706}
   - {fileID: 1474082186}
   - {fileID: 378824061}
-  m_Father: {fileID: 310926238}
-  m_RootOrder: 10
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818890697
 GameObject:
@@ -6184,7 +6195,7 @@ Transform:
   - {fileID: 681591694}
   - {fileID: 1780693517}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023036267
 GameObject:
@@ -6924,11 +6935,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510288a3cf508854c81ed7ec2e9de81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardSheet: {fileID: 4900000, guid: c5a06f867f36fce4995c6effd29dff55, type: 3}
+  cardSheet: {fileID: 4900000, guid: d74784173110d564e9eaf45631a0ae7e, type: 3}
   cardDisplay: {fileID: 1002461385}
   maxOdds: 100000
   rarityOdds: a08601006a1800000d0300006100000001000000
-  debugDisableBigCard: 0
+  debugDisableBigCard: 1
 --- !u!4 &1089098577
 Transform:
   m_ObjectHideFlags: 0
@@ -13845,6 +13856,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 811846120}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2086450261
 GameObject:
   m_ObjectHideFlags: 0
@@ -13985,7 +14008,7 @@ RectTransform:
   - {fileID: 665018620}
   - {fileID: 1640468961}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
