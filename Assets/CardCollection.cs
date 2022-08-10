@@ -9,20 +9,12 @@ public class CardCollection : MonoBehaviour
 	public CollectionCard[] allCards;
 	public int cardsPerRow = 5;
 	CardManager cardManager;
+	public bool debugEnableBlackout = true;
 
-	private void Start()
+	private void Awake()
 	{
 		cardManager = GameObject.FindObjectOfType<CardManager>();
-	}
-
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.K))
-			Populate(0);
-		if (Input.GetKeyDown(KeyCode.J))
-			Populate(1);
-		if (Input.GetKeyDown(KeyCode.H))
-			Populate(2);
+		Populate(0);
 	}
 
 	public void Populate(int rarity) {
@@ -30,12 +22,6 @@ public class CardCollection : MonoBehaviour
 			if (allCards[i] != null)
 				Destroy(allCards[i].gameObject);
 		}
-		Debug.Log(cardManager.allCards.Count);
-		Debug.Log(cardManager.allCards[0][0].rarity);
-		Debug.Log(cardManager.allCards[1][0].rarity);
-		Debug.Log(cardManager.allCards[2][0].rarity);
-		Debug.Log(cardManager.allCards[3][0].rarity);
-		Debug.Log(cardManager.allCards[4][0].rarity);
 
 		allCards = new CollectionCard[cardManager.allCards[rarity].Count];
 
@@ -53,7 +39,7 @@ public class CardCollection : MonoBehaviour
 
 			Card myCard = cardManager.allCards[rarity][i];
 			allCards[i].UpdateCard(myCard);
-			if (!PlayerCollection.collectedIds.Contains(myCard.id)) {
+			if (!PlayerCollection.collectedIds.Contains(myCard.id) && debugEnableBlackout) {
 				allCards[i].BlackOut();
 			}
 		}
