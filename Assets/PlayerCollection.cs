@@ -22,7 +22,7 @@ public class PlayerCollection : MonoBehaviour
 	public TextMeshProUGUI currencyText;
 
 	public List<CollectedCard> cardCollection;
-	public List<string> collectedIds;
+	static public List<string> collectedIds;
 
 	private void Start()
 	{

@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class CardManager : MonoBehaviour
 {
 	public TextAsset cardSheet;
+	[SerializeField]
 	public List<List<Card>> allCards;
 	public BigCard cardDisplay;
 
