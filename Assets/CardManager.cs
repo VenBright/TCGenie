@@ -82,7 +82,8 @@ public class CardManager : MonoBehaviour
 			return;
 		}
 
-		if (playerDeck.AddCard(pickedCard) && !debugDisableBigCard && (pickedCard.prereq.Contains("CARD") || pickedCard.id.Equals("where")))
+		if (playerDeck.AddCard(pickedCard) && !debugDisableBigCard)
+//		&& (pickedCard.prereq.Contains("CARD") || pickedCard.id.Equals("where")))
 		{
 			cardDisplay.QueueCard(pickedCard);
 		}
