@@ -85,4 +85,9 @@ public class PlayerCollection : MonoBehaviour
 
 		return true;
 	}
+
+	public void SpendCards(int amt) {
+		totalCards -= amt;
+		currencyText.text = string.Format("{0:#,###0}", totalCards);
+	}
 }
