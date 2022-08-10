@@ -15,6 +15,8 @@ public class CardManager : MonoBehaviour
 	string[] cardList;
 	PlayerCollection playerDeck;
 
+	public bool debugDisableBigCard;
+
 	private void Start()
 	{
 		playerDeck = GameObject.FindObjectOfType<PlayerCollection>();
@@ -78,7 +80,7 @@ public class CardManager : MonoBehaviour
 			return;
 		}
 
-		if (playerDeck.AddCard(pickedCard))
+		if (playerDeck.AddCard(pickedCard) && !debugDisableBigCard)
 		{
 			cardDisplay.QueueCard(pickedCard);
 		}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerCollection : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class PlayerCollection : MonoBehaviour
 		}
 	}
 
+	public int totalCards = 0;
+	public TextMeshProUGUI currencyText;
+
 	public List<CollectedCard> cardCollection;
 	public List<string> collectedIds;
 
@@ -28,6 +32,8 @@ public class PlayerCollection : MonoBehaviour
 
 	//Returns true if the added card was not yet in the deck
 	public bool AddCard(Card cardIn) {
+		totalCards++;
+		currencyText.text = string.Format("{0:#,###0}", totalCards); ;
 		if (!collectedIds.Contains(cardIn.id))
 		{
 			CollectedCard newCard = new CollectedCard(cardIn);
