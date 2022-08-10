@@ -13,6 +13,8 @@ public class BigCard : MonoBehaviour
     public Sprite[] raritySprites = new Sprite[5];
     Animator cardAnim;
 
+    public GameObject ui;
+
     public List<Card> queuedCards;
 
     [System.Serializable]
@@ -61,6 +63,8 @@ public class BigCard : MonoBehaviour
             case State.FRONT:
                 cardAnim.Play("SlideOut", 0, 0);
                 currentState = State.OFF;
+                if (queuedCards.Count <= 0)
+                    ui.SetActive(true);
                 break;
         }
     }
@@ -81,6 +85,8 @@ public class BigCard : MonoBehaviour
 
     public void DisplayCard(Card card)
     {
+        ui.SetActive(false);
+
         cardName.text = card.name;
         cardDesc.text = card.description;
         cardRarity.sprite = raritySprites[card.rarity - 1];
