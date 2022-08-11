@@ -35,9 +35,6 @@ public class PlayerCollection : MonoBehaviour
 		totalCards++;
 		currencyText.text = string.Format("{0:#,###0}", totalCards);
 
-		if (cardIn.id == "getout")
-			Debug.LogError("YOU DID IT. YOU WON. IDIOT");
-
 		if (!collectedIds.Contains(cardIn.id))
 		{
 			CollectedCard newCard = new CollectedCard(cardIn);

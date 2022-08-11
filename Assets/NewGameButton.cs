@@ -13,7 +13,7 @@ public class NewGameButton : MonoBehaviour
 
     private void OnMouseUp()
     {
-        SceneManager.LoadScene("FullSreen", LoadSceneMode.Single);
+        SceneManager.LoadScene("FullScene", LoadSceneMode.Single);
     }
 
     // Update is called once per frame

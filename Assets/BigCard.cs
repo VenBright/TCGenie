@@ -21,6 +21,8 @@ public class BigCard : MonoBehaviour
     public enum State {OFF, BACK, FRONT };
     public State currentState = State.OFF;
 
+    public bool isWinner = false;
+    public GameObject winThing;
     void Start()
     {
         cardAnim = GetComponent<Animator>();
@@ -63,6 +65,14 @@ public class BigCard : MonoBehaviour
             case State.FRONT:
                 cardAnim.Play("SlideOut", 0, 0);
                 currentState = State.OFF;
+                if (isWinner)
+                {
+                    Debug.Log("YOU DID IT. YOU WON. IDIOT");
+                    winThing.SetActive(true);
+                    GameObject.Find("PackManager").SetActive(false);
+                    gameObject.SetActive(false);
+                    break;
+                }
                 if (queuedCards.Count <= 0)
                     ui.SetActive(true);
                 break;
@@ -102,5 +112,8 @@ public class BigCard : MonoBehaviour
         {
             cardPic.material.SetTexture("_MainTex", defaultCardPic);
         }
+
+        if (card.id.Equals("getout"))
+            isWinner = true;
     }
 }
