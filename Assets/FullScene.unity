@@ -2868,7 +2868,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   cardsPerRow: 5
-  debugEnableBlackout: 1
+  debugEnableBlackout: 0
 --- !u!1 &589692184
 GameObject:
   m_ObjectHideFlags: 0
